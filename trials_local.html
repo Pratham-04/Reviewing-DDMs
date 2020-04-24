@@ -1,0 +1,19 @@
+<html>
+
+<head>
+	<script src="loops.js">
+	</script>
+</head>
+
+<body>
+	<center style="font-size:30px;margin-top:40px">Look at the stimulus here.</center><br><br><br><br><br><br>
+<pre id = "t1"><code><center style = "font-size:15px;letter-spacing:0.5em"><p id="demo"></p></center></code></pre>
+
+<script>
+var t = Math.random() < 0.5 ? "Z" : "M";
+var loop_array = [loop_n, loop_h, loop_k, loop_b, loop_f, loop_r, loop_v, loop_w, loop_x];
+var i = Math.floor(Math.random()*9);
+document.getElementById("demo").innerHTML = loop_array[i](t);
+</script>
+</body>
+</html>
