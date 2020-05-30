@@ -1,0 +1,38 @@
+<html>
+
+<head>
+
+	<title>Beep_M Trials</title>
+	<script src = "static\loops.js"></script>
+	<script src = "static\task.js"></script>
+	<script src = "static\submit_data.js"></script>
+	
+</head>
+
+<body>
+
+	<br><br><br><br><br><br>
+	<pre id = "stimulus" align = "center" style = "font-size:15px;letter-spacing:0.5em"></pre>
+	<p id = "feedback" align = "center" style = "font-size:40px;color:white">You can only press M or Z!</p>
+	
+<script>
+	
+		var numTrials = 5;
+		var RT_array = new Array();
+		var report_array = new Array();
+		var global = new Array(), local = new Array(), response_array = new Array();
+		var toReport_array = [];
+		var trialID = "beep";
+		var alpha_array = ["N", "H", "K", "B", "F", "R", "V", "W", "X", "M"];	
+		var loop_array = [loop_n, loop_h, loop_k, loop_b, loop_f, loop_r, loop_v, loop_w, loop_x, loop_m];
+		runTrials(1);
+	
+</script>
+
+	<center><form method = "POST" action = {{ url_for('insLocal') }}>
+			<input type="hidden" value="Next" id="proceed" style="font-size:20px">
+			<input type="hidden" value="" name="see_data" id = "see_data">
+	</form></center>
+	
+</body>
+</html>

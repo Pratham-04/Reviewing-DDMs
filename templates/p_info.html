@@ -1,0 +1,18 @@
+<html>
+
+<title>Personal Information</title>
+
+<body style = "font-size:25px;margin-left:50px">
+	<p style = "font-size:50px" > Personal Information Form </p>
+	<form method = "POST" action = "{{ url_for('insBeep_z') }}" >
+		<!--<p>Name : <input type = "text" name = "name"></p>-->
+		<p>Roll no. : <input type = "text" name = "rno"></p>
+		<p>Age : <input type = "text" name = "age"></p>
+		<p>Sex (M/F/I) : <input type = "text" name = "sex"></p>
+		<p>Handedness (R/L/A) : <input type = "text" name = "hand"></p>
+		
+		<p><input type = "submit" value = "Proceed to Experiment"></p>
+	</form>
+</body>
+
+</html>

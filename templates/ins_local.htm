@@ -1,0 +1,19 @@
+<html>
+ 
+<title>Local Instructions</title> 
+
+<body>
+	<h1 style="margin-top:100px; margin-left:100px">Instructions</h1>
+	<p style="margin-top:100px; margin-left:100px; margin-right:100px; font-size:30px;">
+		You will be shown a character made of either Ms or Zs. You are supposed to press M when it's made of M, and Z when it's made of Z.
+	</p>
+	<br><br>
+	<center>
+		<form method = "POST" action = {{ url_for('trialLocal') }}>
+			<input style = "font-size:20px" type = "submit" value = "Run Experiment">
+		</form>
+	</center>
+
+</body>
+
+</html>
